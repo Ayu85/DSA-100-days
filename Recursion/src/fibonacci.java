@@ -8,7 +8,6 @@ public class fibonacci {
             first = second;
             second = sum;
            System.out.print(sum + " ");
-
             if (i== n -2)
                 System.out.println("nth :"+ sum);
         }
