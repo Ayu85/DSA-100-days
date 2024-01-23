@@ -2,11 +2,12 @@ import java.util.Arrays;
 
 public class hashing_example {
     static int getOccur(int[] arr, int n, int target) {
+        //creating a hash array
         int[] temp = new int[n+1];
+//        storing the count of each element of original array in hash array
         for (int x : arr)
             temp[x]++;
-        System.out.println(Arrays.toString(temp));
-
+//        fetching the count of required element from the hash array
         return temp[target];
     }
 
