@@ -13,7 +13,6 @@ public class character_hashing {
 
         return hash[target-65];
     }
-
     public static void main(String[] args) {
         char[] arr = {'r', 'z', 'a', 'r', 'a'};
         char[] arr2={'A','V','A','G','C'};
