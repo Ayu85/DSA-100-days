@@ -9,13 +9,14 @@ public class character_hashing {
     static int getCharCount(char[] arr, char target) {
         int[] hash = new int[26];
         for (char x : arr)
-            if (x == target) hash[x - 97]++;
+            if (x == target) hash[x-65]++;
 
-        return hash[target-97];
+        return hash[target-65];
     }
 
     public static void main(String[] args) {
         char[] arr = {'r', 'z', 'a', 'r', 'a'};
-        System.out.println(getCharCount(arr, 'x'));
+        char[] arr2={'A','V','A','G','C'};
+        System.out.println(getCharCount(arr2, 'O'));
     }
 }
