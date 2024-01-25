@@ -26,7 +26,7 @@ public class merge_2_sorted_arrays {
     }
 
     public static void main(String[] args) {
-        int[] arr1 = {1, 3, 5,8,9,10};
+        int[] arr1 = {1, 3, 5, 8, 9, 10};
         int[] arr2 = {2, 4, 7, 8};
         System.out.println(Arrays.toString(mergeTwo(arr1, arr2)));
     }
