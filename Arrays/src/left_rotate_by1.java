@@ -1,7 +1,8 @@
 public class left_rotate_by1 {
     public static void main(String[] args) {
         int[] arr={-2,65,1,5};
-        rotate(arr);
+        int[] arr2={1,2,3,4};
+        rotate(arr2);
     }
 
     static void rotate(int[] arr) {
