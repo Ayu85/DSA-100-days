@@ -7,13 +7,15 @@ public class second_largest {
                 secMax = max;
                 max = x;
             }
+            else if(x>secMax)
+                secMax=x;
 
         }
         return secMax;
     }
 
     public static void main(String[] args) {
-        int[] arr = {2,1,3,4,5,8,0};
+        int[] arr = {2,1,4,6,8,7};
         System.out.println(getSecondLargst(arr));
     }
 }
