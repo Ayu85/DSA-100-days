@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class move_zeroes_to_end {
     static void moveZeroesToEnd(int[] arr, int n) {
         int j = 0;
@@ -9,10 +11,12 @@ public class move_zeroes_to_end {
                 arr[j] = temp;
             }
         }
+
         for (int x : arr)
             System.out.print(x + " ");
 
     }
+
 
     public static void main(String[] args) {
         int[] arr = {0, 0, 0, 3, 2, 0, 0, 4, 5, 1};
