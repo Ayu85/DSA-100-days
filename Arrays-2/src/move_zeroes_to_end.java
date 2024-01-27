@@ -3,7 +3,7 @@ public class move_zeroes_to_end {
         int j = 0;
         for (int i = 1; i < n; i++) {
             if (arr[i] != 0) {
-                j++;
+                if (arr[j] != 0) j++;
                 int temp = arr[i];
                 arr[i] = arr[j];
                 arr[j] = temp;
@@ -15,7 +15,7 @@ public class move_zeroes_to_end {
     }
 
     public static void main(String[] args) {
-        int[] arr = {1, 0, 2, 3, 2, 0, 0, 4, 5, 1};
+        int[] arr = {0, 0, 0, 3, 2, 0, 0, 4, 5, 1};
         moveZeroesToEnd(arr, arr.length);
 
     }
