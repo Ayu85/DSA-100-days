@@ -14,10 +14,10 @@ public class union_of_two_sorted {
 
         while (i < arr1.length && j < arr2.length) {
             if (arr1[i] <= arr2[j]) {
-                if (temp.size() == 0 || temp.get(temp.size() - 1) != arr1[i]) temp.add(arr1[i]);
+                if (temp.isEmpty() || temp.get(temp.size() - 1) != arr1[i]) temp.add(arr1[i]);
                 i++;
             } else {
-                if (temp.size() == 0 || temp.get(temp.size() - 1) != arr2[j]) temp.add(arr2[j]);
+                if (temp.isEmpty() || temp.get(temp.size() - 1) != arr2[j]) temp.add(arr2[j]);
                 j++;
             }
 
