@@ -22,6 +22,14 @@ public class union_of_two_sorted {
             }
 
         }
+        while (i < arr1.length) {
+            if (temp.get(temp.size() - 1) != arr1[i]) temp.add(arr1[i]);
+            i++;
+        }
+        while (j < arr2.length) {
+            if (temp.get(temp.size() - 1) != arr2[j]) temp.add(arr2[j]);
+            j++;
+        }
         for (int x : temp)
             System.out.print(x + " ");
     }
