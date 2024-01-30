@@ -1,6 +1,6 @@
 public class find_the_number_appears_once_HASHING {
     public static void main(String[] args) {
-        int[] arr = {1, 1, 2, 2, 3, 4, 4};
+        int[] arr = {1, 1, 2,3, 3, 4, 4};
         System.out.println(getNum(arr,arr.length));
     }
 
