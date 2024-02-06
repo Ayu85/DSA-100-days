@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class rearrange_elements_by_sign {
     public static void main(String[] args) {
-        int[] arr = {2, -1, 3, -5, -4, 4};
+        int[] arr = {2, -1, 3, -5, -4, 5};
         System.out.println(Arrays.toString(arrangeElements(arr, arr.length)));
     }
 
