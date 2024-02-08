@@ -19,7 +19,7 @@ public class longest_common_subs_optimal {
                 count = 1;
                 lastSmall = x;
             }
-            max = count > max ? count : max;
+            max = Math.max(count, max);
 
 
         }
