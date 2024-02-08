@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class longest_common_subs_optimal {
     public static void main(String[] args) {
-        int[] arr = {5, 8, 3, 2, 1, 4};
+        int[] arr = {102,4,100,1,101,3,2,1,1};
         System.out.println(getLongestSub(arr, arr.length));
     }
 
