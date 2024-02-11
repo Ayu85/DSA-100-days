@@ -20,5 +20,9 @@ public class spiral_matrix {
         for (int i = right; i >= left; i--) {
             System.out.print(mat[bottom][i] + " ");
         }
+        bottom--;
+        for (int i = bottom; i >= top; i--) {
+            System.out.print(mat[i][left] + " ");
+        }
     }
 }
