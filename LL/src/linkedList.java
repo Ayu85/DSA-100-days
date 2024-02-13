@@ -12,8 +12,13 @@ public class linkedList {
     }
     static Node head;
     static Node tail;
+    static void addAtFirst(int data){
+        Node newNode=new Node(data);
+        newNode.next=head;
+        head=newNode;
+    }
     public static void main(String[] args) {
-        Node n1=new Node(4);
-        System.out.println(n1.next);
+
+
     }
 }
