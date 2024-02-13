@@ -2,12 +2,17 @@ public class creation {
     public static void main(String[] args) {
         int[] arr = {2, 5, 1, 4, 8};
         Node head= new Node(arr[0]);
+        Node temp=new Node(arr[4]);
+        head.next=temp;
+        System.out.println(head.value);
+
+
     }
 }
 
 class Node {
-    private int value;
-    private Node next;
+     int value;
+     Node next;
 
     public Node(int value) {
         this.value = value;
