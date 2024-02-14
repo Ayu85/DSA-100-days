@@ -1,32 +1,32 @@
 public class validPalindrome {
     static boolean checkValid(String s) {
+        if (s.isEmpty()) {
+            return true;
+        }
         int start = 0;
-        int end = s.length() - 1;
-        while (start <= end) {
-            if ((s.charAt(start) < 65 || (s.charAt(start) > 90 && s.charAt(start) < 97)) ||
-                    s.charAt(start) > 122
-            ) {
+        int last = s.length() - 1;
+        while(start <= last) {
+            char currFirst = s.charAt(start);
+            char currLast = s.charAt(last);
+            if (!Character.isLetterOrDigit(currFirst )) {
                 start++;
-//                break;
+            } else if(!Character.isLetterOrDigit(currLast)) {
+                last--;
+            } else {
+                if (Character.toLowerCase(currFirst) != Character.toLowerCase(currLast)) {
+                    return false;
+                }
+                start++;
+                last--;
             }
-            if ((s.charAt(end) > 122 || (s.charAt(end) > 90 && s.charAt(end) < 97)) || s.charAt(end) < 65) {
-                end--;
-//                break;
-            }
-            if (s.toLowerCase().charAt(start) != s.toLowerCase().charAt(end))
-                return false;
-            System.out.println(s.charAt(start)+", "+s.charAt(end));
-            start++;
-            end--;
-
         }
         return true;
     }
 
     public static void main(String[] args) {
-       // System.out.println(checkValid("A man, a plan, a canal: Panama"));
-        System.out.println(checkValid("0P"));
-        //ystem.out.println(checkValid("  a."));
+      //  System.out.println(checkValid("A man, a plan, a canal: Panama"));
+        System.out.println(checkValid("race a car"));
+        //System.out.println(checkValid("1b1"));
 
     }
 }
