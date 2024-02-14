@@ -15,7 +15,9 @@ public class palindrome {
                 end--;
                 break;
 
-            } else if (str.charAt(start++) != str.charAt(end--))
+            }
+//            in the above checks we ignore the spaces
+            else if (str.charAt(start++) != str.charAt(end--))
                 return false;
 
 
