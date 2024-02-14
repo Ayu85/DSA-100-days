@@ -1,6 +1,6 @@
 public class palindrome {
     public static void main(String[] args) {
-        System.out.println(checkPal("c@ivi@ c"));
+        System.out.println(checkPal("C@ivi@ c"));
 
     }
 
@@ -17,7 +17,7 @@ public class palindrome {
 
             }
 //            in the above checks we ignore the spaces
-            else if (str.charAt(start++) != str.charAt(end--))
+            else if (str.toLowerCase().charAt(start++) != str.toLowerCase().charAt(end--))
                 return false;
 
 
