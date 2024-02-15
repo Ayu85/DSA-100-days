@@ -1,6 +1,6 @@
 public class reverse_words {
     public static void main(String[] args) {
-        System.out.println(reverseSentence("the sky is blue"));
+        System.out.println(reverseSentence("a good   example"));
     }
 
     static String reverseSentence(String str) {
@@ -12,8 +12,10 @@ public class reverse_words {
             if (str.charAt(j) == ' ' || j == 0) {
                 int start = i;
                 int end = j == 0 ? j : j + 1;
-                s += add(str, start, end);
+                String temp = add(str, start, end);
+                if (!temp.equals(" ")) s += temp;
                 i = j - 1;
+                temp = " ";
             }
             j--;
 
