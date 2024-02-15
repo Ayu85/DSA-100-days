@@ -1,6 +1,6 @@
 public class reverse_words {
     public static void main(String[] args) {
-        System.out.println(reverseSentence("hello world"));
+        System.out.println(reverseSentence("the sky is blue"));
     }
 
     static String reverseSentence(String str) {
@@ -10,7 +10,9 @@ public class reverse_words {
         int j = i;
         while (j >= 0) {
             if (str.charAt(j) == ' ' || j == 0) {
-                s += add(str, i, j);
+                int start = i;
+                int end = j == 0 ? j : j + 1;
+                s += add(str, start, end);
                 i = j - 1;
             }
             j--;
@@ -25,7 +27,7 @@ public class reverse_words {
             result += str.charAt(i);
 
         }
-        return result+" ";
+        return result + " ";
     }
 
 }
