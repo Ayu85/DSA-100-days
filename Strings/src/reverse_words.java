@@ -16,7 +16,7 @@ public class reverse_words {
             j--;
 
         }
-        return s;
+        return s.trim();
     }
 
     static String add(String str, int start, int end) {
@@ -25,7 +25,7 @@ public class reverse_words {
             result += str.charAt(i);
 
         }
-        return result;
+        return result+" ";
     }
 
 }
