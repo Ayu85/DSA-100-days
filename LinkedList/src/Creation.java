@@ -5,8 +5,9 @@ public class Creation {
         Node node2 = new Node(30);
         head.next = node1;
         node1.next = node2;
-
-
+        System.out.println(head.data);
+        System.out.println(node1.data);
+        System.out.println(node2.data);
     }
 }
 
